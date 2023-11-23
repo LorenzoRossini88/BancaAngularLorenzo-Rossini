@@ -1,0 +1,25 @@
+<div *ngIf="banks && banks.length > 0">
+  <h2>Lista Banche</h2>
+  <ul>
+    <li *ngFor="let bank of banks" class="bank-item">
+      <div>
+        <strong>Nome Banca:</strong> {{ bank.nome }}
+      </div>
+      <div>
+        <strong>Funzionalità:</strong>
+        <ul>
+          <li *ngFor="let funzionalita of bank.bancheFunzionalita">
+            {{ funzionalita }}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <strong>Utente:</strong> {{ bank.utentis.nomeUtente }} ({{ bank.utentis.bloccato ? 'Bloccato' : 'Non bloccato' }})
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!banks || banks.length === 0">
+  <p>Nessuna banca disponibile.</p>
+</div>

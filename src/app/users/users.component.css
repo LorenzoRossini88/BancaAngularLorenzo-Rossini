@@ -1,0 +1,100 @@
+
+
+.users-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #3498db; 
+    border-bottom: 2px solid #3498db;
+  }
+  
+  .add-user-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .add-user-form h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db; 
+    border-bottom: 2px solid #3498db;
+    text-align: center;
+    
+}
+
+.add-user-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-user-form label {
+    margin-bottom: 5px;
+}
+
+.add-user-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.add-user-form button {
+    background-color: #34db34;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-user-form button:hover {
+    background-color: #2980b9;
+}
+  
+  .user-list {
+    margin-top: 20px;
+  }
+  
+  .user-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .no-users-message {
+    margin-top: 20px;
+  }
+
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 5px; 
+    margin-top: 20px; 
+  }
+  
+
+  button {
+    background-color: #34db34;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  

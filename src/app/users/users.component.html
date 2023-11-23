@@ -1,0 +1,45 @@
+
+<div class="users-container">
+  
+
+ 
+  <div class="add-user-form">
+    <h2>Aggiungi Utente</h2>
+    <form (submit)="addUser()">
+      <label for="newUsername">Nuovo Username:</label>
+      <input type="text" id="newUsername" name="newUsername" [(ngModel)]="newUsername" required />
+      <br>
+
+      
+      <label for="newPassword">Nuova Password:</label>
+      <input type="password" id="newPassword" name="newPassword" [(ngModel)]="newPassword" required />
+      <br>
+
+      
+      <label for="newBancaId">ID Banca:</label>
+      <input type="number" id="newBancaId" name="newBancaId" [(ngModel)]="newBancaId" required />
+      <br>
+      <br>
+      
+      
+      
+
+      <button type="submit">Aggiungi Utente</button>
+    </form>
+  </div>
+
+  
+  <div *ngIf="users && users.length > 0" class="user-list">
+    <h2>Lista Utenti</h2>
+    <ul>
+      <li *ngFor="let user of users" class="user-item">
+        <strong>{{ user.nomeUtente }}</strong> - Bloccato: {{ user.bloccato ? 'Sì' : 'No' }} - ID Banca: {{ user.idBanca }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Messaggio in caso non ci siano utenti -->
+  <div *ngIf="!users || users.length === 0" class="no-users-message">
+    <p>Nessun utente disponibile.</p>
+  </div>
+</div>
